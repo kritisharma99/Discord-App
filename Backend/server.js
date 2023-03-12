@@ -5,6 +5,7 @@ import mongoose from 'mongoose'
 import dotenv from 'dotenv'
 import connectDb from "./config/db.js"
 
+import authRoutes from "./routes/authRoutes.js"
 dotenv.config()
 connectDb()
 
@@ -13,7 +14,10 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
+
+app.use('/api/auth',authRoutes)
+
 const server = http.createServer(app)
 server.listen(PORT, ()=>{
-    console.log(`server is litening on ${PORT}`)
+    console.log(`server is listening on ${PORT}`)
 })
