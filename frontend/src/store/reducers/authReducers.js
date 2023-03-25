@@ -1,12 +1,15 @@
+import { actions } from "../actions/authAction"
+
 const initialState ={
     userDetails: null
 }
 
 const registerReducer = (state = initialState,action) =>{
     switch(action.type){
-        case 'DUMMY':
+        case actions.SET_USERS_DETAILS:
             return {
-                ...state
+                ...state,
+                userDetails: action.userDetails,
             }
         default:
             return state

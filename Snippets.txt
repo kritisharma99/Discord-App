@@ -1,0 +1,31 @@
+1. npm installing express, express-jio-validation -> to validate the payload coming
+2. joi and jsonwebToken, mongoose, cors, dotenv, bcryptjs
+
+
+// /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
+
+1. Register Page ->  RegisterPage Form passing props 
+// - -const {username,setUsername,mail,setMail,password,setPassword} = props
+//   return (} -> 
+2. 
+import it into Register Page
+3. In RegisterPageForm -> use InputWithLabel component
+4, RegisterPage footer -> make changes -> CustomPrimaryButton and RedirectInfo
+5. in this use -> useEffect -> call this function to check form is valid or not
+6. create -> validateRegisterForm in ../shared/utils/validators
+
+
+//////////////////////////////////
+==================================================
+trying to connect to API
+==================================================
+
+1. create api.js -> import axios and create the apiClient
+2. set the base URL -> and make api login n register. call
+3. Now create User auhentication actions -> in store floder -> actions
+4. login n register function in actions
+5. importing const in reducers file
+
+
+=======================================
+1. map the getActions in authAction as Props to Login n register page -> see in bottom

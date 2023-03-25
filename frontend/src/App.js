@@ -3,7 +3,8 @@ import { Redirect } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from './authPages/Login';
 import Register from './authPages/Register';
-import Dashboard from './authPages/Dashboard';
+import Dashboard from './Dashboard/Dashboard';
+import AlertNotification from './shared/component/AlertNotification';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/register" element={<Register />} />
           </Routes>
       </Router>
+      <AlertNotification/>
     </div>
   );
 }
